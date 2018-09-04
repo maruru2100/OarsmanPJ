@@ -1,0 +1,60 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>StartPage</title>
+	<!-- CSSファイルを追加  -->
+	<link rel="stylesheet"  href="{{url_for('static', filename='index.css')}}">
+	<!-- JSファイルを追加  -->
+	<script type="text/javascript" src="{{url_for('static', filename='index.js')}}" ></script>
+
+</head>
+<body>
+	<div class="page">
+		<h1>ようこそおいでくださいました。</h1>
+		<h1>「はじめに」ページをご覧になったうえで本ページ機能をご利用ください。</h1>
+
+	<form action="/test" method="get">
+		<button name="get_value" value="from get">はじめに</button>
+	</form>
+
+	<form action="/search" method="get">
+		<botton name="to_search" value="to_search">検索画面へ</botton>
+	</form>
+
+
+	<form action="/search" method="get">
+		<botton name="to_registration" value="to_registration">登録画面へ</botton>
+	</form>
+
+	<form action="/test" method="post">
+		<button name="post_value" value="from post">post submit</button>
+	</form>
+
+
+	<!--<p>{{ massage }}</p>
+	<h1>Hello</h1>
+	<h2 id='test'> Wolrd</h2>
+	<p>{{ s }}</p>
+	<hr>
+
+	<ul>
+		{% for x in lis %}
+			<li>{{ x }}</li>
+		{% endfor %}
+	</ul>
+	<hr>
+
+	<p>{{ "name: %s age: %s" % (dic["name"], dic["age"]) }}</p>
+	<hr>
+
+	{% if bl %}
+		<p>True</p>
+	{% else %}
+		<p>False</p>
+	{% endif %}
+-->
+
+</body>
+</html>
